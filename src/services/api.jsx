@@ -6,7 +6,7 @@ const getBackendURL = () => {
     return 'http://localhost:5000/api';
   }
   // For production, use environment variable or the deployed backend URL
-  return import.meta.env.VITE_BACKEND_URL || 'https://backend-url.vercel.app/api';
+  return import.meta.env.VITE_BACKEND_URL || 'https://time-table-server-three.vercel.app/api';
 };
 
 const API = axios.create({
