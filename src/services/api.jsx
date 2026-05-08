@@ -3,7 +3,7 @@ import axios from 'axios';
 // Determine backend URL based on environment
 const getBackendURL = () => {
   if (import.meta.env.DEV) {
-    return 'http://localhost:5000/api';
+    return 'https://time-table-server-three.vercel.app/api';
   }
   // For production, use environment variable or the deployed backend URL
   return import.meta.env.VITE_BACKEND_URL || 'https://time-table-server-three.vercel.app/api';
