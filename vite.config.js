@@ -10,4 +10,13 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://time-table-server-three.vercel.app',
+        changeOrigin: true,
+        secure: true,
+      },
+    },
+  },
 })
